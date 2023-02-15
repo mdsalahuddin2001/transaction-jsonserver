@@ -1,7 +1,7 @@
 const jsonServer = require("json-server"); // importing json-server library
-const cors = require("cors");
+
 const server = jsonServer.create();
-server.use(cors());
+
 const router = jsonServer.router("db_transactions.json");
 const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 9000; // you can use any port number here; i chose to use 3001
